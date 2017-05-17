@@ -20,20 +20,21 @@ public class PiNthDigit {
      *     <li>Calculate the epsilon value of precision</li>
      *     <li>Perform the loop of calculating infinite series till the precision limits are met</li>
      * </ol>
-     * It becomes kinda slow after the 8th...
+     * It becomes kinda slow after the 7th...
      * @param digit the digit limit
      * @return PI with the given precision
+     * @throws IllegalArgumentException
      */
     public double piUpToDigit(short digit) throws IllegalArgumentException {
 
         if (digit < 1) throw new IllegalArgumentException("The number should be greater than 0");
 
         double piHigh = 4.0 - 4.0 / 3, piLow = piHigh + 4.0 / 5;
-        double epsilon = Math.pow(10.0, -digit + .0);
+        double epsilon = Math.pow(10.0, -digit - 1.);
 
-        for (int i = 3; Math.abs(piHigh - piLow) > epsilon; i += 2) {
+        for (int i = 3; Math.abs(piHigh - piLow) > epsilon; i++) {
             piHigh = piLow - 4.0 / (2 * i + 1);
-            piLow = piHigh + 4.0 / (2 * i + 3);
+            piLow = piHigh + 4.0 / (2 * (++i) + 1);
         }
         return piHigh;
     }

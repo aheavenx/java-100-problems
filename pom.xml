@@ -8,6 +8,7 @@
     <modules>
         <module>p1-pi-nth-digit</module>
         <module>common</module>
+        <module>e-to-nth-digit</module>
     </modules>
     <packaging>pom</packaging>
     <name>java-100-problems</name>
