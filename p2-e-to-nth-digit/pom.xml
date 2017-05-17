@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>e-to-nth-digit</artifactId>
+    <artifactId>p2-e-to-nth-digit</artifactId>
 
     <dependencies>
         <dependency>
