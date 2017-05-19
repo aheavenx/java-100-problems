@@ -6,7 +6,6 @@ import java.nio.file.AtomicMoveNotSupportedException;
 import java.util.Arrays;
 import java.util.function.BiFunction;
 import java.util.function.Function;
-import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 /**
@@ -22,7 +21,7 @@ public class Beautiful {
                 Stream.of(
                         ((Function<byte[], Byte[]>)($ -> { Byte[] $$ = new Byte[$.length]; Arrays.setAll($$, $$$ -> $[$$$]); return $$; }))
                                 .apply(new BigInteger(
-                                        Long.toString(0x6b6277622f6d626fL, 16) + Long.toString(0x682f547a7475666eL, 16), 16)
+                                        Long.toString(0x6b6277622f6d626fL, _________ << __) + Long.toString(0x682f547a7475666eL, _____ << ___), __ << _____)
                                         .toByteArray()))
                         .map($ -> $ - 1)
                         .map($ -> ((char) $.shortValue()))
@@ -39,9 +38,9 @@ public class Beautiful {
                 .getDeclaredMethod("print", Class.forName("java.lang.String"))
                 .invoke(
                         Class.forName(Stream.of(
-                                ((Function<byte[], Byte[]>)($ -> { Byte[] $$ = new Byte[$.length]; Arrays.setAll($$, $$$ -> $[$$$]); return $$; }))
+                                ((Function<byte[], Byte[]>)($ -> { Byte[] $$$ = new Byte[$.length]; Arrays.setAll($$$, $$ -> $[$$]); return $$$; }))
                                         .apply(new BigInteger(
-                                                Long.toString(0x6e657a6532706572L, 16) + Long.toString(0x6b32577d77786971L, 16), 16)
+                                                Long.toString(0x6e657a6532706572L, _____ << ___) + Long.toString(0x6b32577d77786971L, __ << _____),  _________ << __)
                                                 .toByteArray()))
                                 .map($ -> $ - 4)
                                 .map($ -> ((char) $.shortValue()))
@@ -63,7 +62,8 @@ public class Beautiful {
         try {
             System.out.println(AtomicMoveNotSupportedException.class.getSimpleName()); //print
             AtomicMoveNotSupportedException.class.getSimpleName().codePoints(); //todo make "print"
-            new Beautiful().program();
+            
+            //new Beautiful().program();
         } catch (Throwable throwable) {
             throwable.printStackTrace();
         }
