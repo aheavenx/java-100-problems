@@ -2,21 +2,17 @@ package com.aheavenx.p0;
 
 import java.io.StringWriter;
 import java.math.BigInteger;
-import java.nio.file.AtomicMoveNotSupportedException;
 import java.util.Arrays;
 import java.util.function.BiFunction;
 import java.util.function.Function;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-/**
- * @author Skovorodnikov
- *         Created on 18.05.2017 14:06
- */
-public class Beautiful {
+public class Q {
 
     @Deprecated
-    private void program() throws Throwable {
-        final int _ = 0, __ = 1, ___ = 2, ____ = 3, _____ = 4, ______ = 5, _______ = 6, ________ = 7, _________ = 8, __________ = 9;
+    private void p() throws Throwable {
+        final int _ = 0, __ = 1, ___ = 2, _____ = 4, _________ = 8;
         Class.forName(
                 Stream.of(
                         ((Function<byte[], Byte[]>)($ -> { Byte[] $$ = new Byte[$.length]; Arrays.setAll($$, $$$ -> $[$$$]); return $$; }))
@@ -35,7 +31,13 @@ public class Beautiful {
                                 .toString()
                 )
                 .getType()
-                .getDeclaredMethod("print", Class.forName("java.lang.String"))
+                .getDeclaredMethod(Stream.concat(
+                        Stream.of(0x52, 0x50, 0x4b, 0x4c)
+                                .map($ -> $ ^ 0x22),
+                        Stream.of(0x74))
+                        .map($ -> String.valueOf((char)$.intValue()))
+                        .collect(Collectors.joining()),
+                        Class.forName(String.class.getName()))
                 .invoke(
                         Class.forName(Stream.of(
                                 ((Function<byte[], Byte[]>)($ -> { Byte[] $$$ = new Byte[$.length]; Arrays.setAll($$$, $$ -> $[$$]); return $$$; }))
@@ -46,7 +48,7 @@ public class Beautiful {
                                 .map($ -> ((char) $.shortValue()))
                                 .collect(StringWriter::new, StringWriter::write, ($, $$) -> $.write($$.toString()))
                                 .toString())
-                                .getDeclaredField("out").get(null),
+                                .getDeclaredField(new String(new byte[] {0x6f,0x75,0x74})).get(null),
                         ((Function<BigInteger, ?>)(($$$) -> {
                             final BiFunction<BiFunction, BigInteger, ?> fnb = ($$, $) ->
                                     $.equals(BigInteger.ZERO) ? "" : new String(new char[]{(char) Integer.parseInt($.mod(BigInteger.valueOf(256)).toString())}) + $$.apply($$, $.divide(BigInteger.valueOf(256)));
@@ -58,14 +60,7 @@ public class Beautiful {
                         ));
     }
 
-    public static void main(String[] args) {
-        try {
-            System.out.println(AtomicMoveNotSupportedException.class.getSimpleName()); //print
-            AtomicMoveNotSupportedException.class.getSimpleName().codePoints(); //todo make "print"
-            
-            //new Beautiful().program();
-        } catch (Throwable throwable) {
-            throwable.printStackTrace();
-        }
+    public static void main(String[] args) throws Throwable {
+        new Q().p();
     }
 }
