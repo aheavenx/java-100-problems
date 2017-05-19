@@ -12,7 +12,7 @@ public class PrimeFactorization {
 
     public LongStream getPrimeFactorsStream(long number) {
         return LongStream.rangeClosed(2, number)
-                .filter(n -> number % n == 0) 
+                .filter(n -> number % n == 0)
                 .mapToObj(n -> LongStream.concat(LongStream.of(n), getPrimeFactorsStream(number / n)))
                 .findFirst()
                 .orElse(LongStream.of(number));

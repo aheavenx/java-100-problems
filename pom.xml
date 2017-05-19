@@ -12,6 +12,7 @@
         <module>p3-fibonacci-sequence</module>
         <module>p0-hello-world</module>
         <module>p4-prime-factorization</module>
+        <module>p5-next-primes</module>
     </modules>
     <packaging>pom</packaging>
     <name>java-100-problems</name>
