@@ -11,6 +11,7 @@
         <module>p2-e-to-nth-digit</module>
         <module>p3-fibonacci-sequence</module>
         <module>p0-hello-world</module>
+        <module>p4-prime-factorization</module>
     </modules>
     <packaging>pom</packaging>
     <name>java-100-problems</name>
