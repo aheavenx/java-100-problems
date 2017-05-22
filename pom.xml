@@ -13,6 +13,7 @@
         <module>p0-hello-world</module>
         <module>p4-prime-factorization</module>
         <module>p5-next-primes</module>
+        <module>p23-collatz-conjecture</module>
     </modules>
     <packaging>pom</packaging>
     <name>java-100-problems</name>
