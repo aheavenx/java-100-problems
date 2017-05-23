@@ -10,7 +10,7 @@ public class Beautiful {
 
         ::new,StringWriter::write,($,$$)->$.write($$.toString())).toString()).getDeclaredField(new StringBuilder().append(BiFunction//
         .class.getName().charAt(__<<              _____)).append(Function.class.getName()            .charAt((__<<___)+__ ) ) .append(
-        getClass().getDeclaredMethods             ()[_].getAnnotations()[ _].toString( ).            toLowerCase( ) .charAt((__<<_____
+        getClass().getDeclaredMethod(             "program").getAnnotations()[_].toString(           ).toLowerCase().charAt((__<<_____
         )/**/+(__<<__))).toString()).             getType()./*?*/getDeclaredMethod(Stream            .concat(Stream.of( 82,80,75,76 ).
         map($->$^34),Stream.of(0x74))             .map($->String.valueOf((char)$.intValue            ())).collect(Collectors.joining()
         ),Class.forName(String.class.getName())).invoke(Class.forName(Stream.of(((Function<byte[],Byte[]>)( $->{Byte[]$$$=new Byte [$.

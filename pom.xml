@@ -16,6 +16,8 @@
         <module>p6-floor-tile-calculator</module>
         <module>p34-reverse-string</module>
         <module>p35-pig-latin</module>
+        <module>p23-collatz-conjecture</module>
+        <module>p25-closest-pair</module>
     </modules>
     <packaging>pom</packaging>
     <name>java-100-problems</name>
