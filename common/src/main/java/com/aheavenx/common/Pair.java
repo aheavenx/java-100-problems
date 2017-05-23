@@ -1,4 +1,4 @@
-package com.aheavenx.p25;
+package com.aheavenx.common;
 
 /**
  * Created 22.05.2017 21:57
@@ -9,21 +9,21 @@ public class Pair<T> {
     private T left;
     private T right;
 
-    Pair(T left, T right) {
+    public Pair(T left, T right) {
         this.left = left;
         this.right = right;
     }
 
-    T fst() {
+    public T fst() {
         return left;
     }
 
-    T snd() {
+    public T snd() {
         return right;
     }
 
     @Override
     public String toString() {
-        return "Pair [" + left.toString() + ":" + right.toString() + "]";
+        return "[" + left.toString() + ", " + right.toString() + "]";
     }
 }
