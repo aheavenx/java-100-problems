@@ -14,6 +14,8 @@
         <module>p4-prime-factorization</module>
         <module>p5-next-primes</module>
         <module>p6-floor-tile-calculator</module>
+        <module>p34-reverse-string</module>
+        <module>p35-pig-latin</module>
     </modules>
     <packaging>pom</packaging>
     <name>java-100-problems</name>
