@@ -11,5 +11,11 @@
 
     <artifactId>p25-closest-pair</artifactId>
 
-
+    <dependencies>
+        <dependency>
+            <groupId>com.aheavenx</groupId>
+            <artifactId>common</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+    </dependencies>
 </project>
