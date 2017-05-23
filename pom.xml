@@ -18,6 +18,8 @@
         <module>p35-pig-latin</module>
         <module>p23-collatz-conjecture</module>
         <module>p25-closest-pair</module>
+        <module>p37-palindrome</module>
+        <module>p13-cities-distance</module>
     </modules>
     <packaging>pom</packaging>
     <name>java-100-problems</name>
@@ -45,6 +47,16 @@
                 <groupId>junit</groupId>
                 <artifactId>junit</artifactId>
                 <version>4.12</version>
+            </dependency>
+            <dependency>
+                <groupId>io.reactivex</groupId>
+                <artifactId>rxjava</artifactId>
+                <version>1.3.0</version>
+            </dependency>
+            <dependency>
+                <groupId>com.google.code.gson</groupId>
+                <artifactId>gson</artifactId>
+                <version>2.8.0</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
