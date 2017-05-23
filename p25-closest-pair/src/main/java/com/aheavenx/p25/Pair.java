@@ -9,16 +9,16 @@ public class Pair<T> {
     private T left;
     private T right;
 
-    public Pair(T left, T right) {
+    Pair(T left, T right) {
         this.left = left;
         this.right = right;
     }
 
-    public T fst() {
+    T fst() {
         return left;
     }
 
-    public T snd() {
+    T snd() {
         return right;
     }
 

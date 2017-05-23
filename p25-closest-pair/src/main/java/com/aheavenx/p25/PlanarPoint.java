@@ -9,19 +9,19 @@ public class PlanarPoint {
     private double x;
     private double y;
 
-    public double getLength(PlanarPoint that) {
+    double getLength(PlanarPoint that) {
         return Math.sqrt((that.getX() - this.x) * (that.getX() - this.x) + (that.getY() - this.y) * (that.getY() - this.y));
     }
 
-    public double getX() {
+    double getX() {
         return x;
     }
 
-    public double getY() {
+    double getY() {
         return y;
     }
 
-    public PlanarPoint(double x, double y) {
+    PlanarPoint(double x, double y) {
         this.x = x;
         this.y = y;
     }
