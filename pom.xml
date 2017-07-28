@@ -21,6 +21,7 @@
         <module>p37-palindrome</module>
         <module>p13-cities-distance</module>
         <module>p33-fizz-buzz</module>
+        <module>p14-credit-card-validator</module>
     </modules>
     <packaging>pom</packaging>
     <name>java-100-problems</name>
