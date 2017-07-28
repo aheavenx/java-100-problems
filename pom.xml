@@ -21,13 +21,13 @@
         <module>p37-palindrome</module>
         <module>p13-cities-distance</module>
         <module>p33-fizz-buzz</module>
-        <module>spring-test</module>
     </modules>
     <packaging>pom</packaging>
     <name>java-100-problems</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <spring.version>4.3.7.RELEASE</spring.version>
     </properties>
 
     <build>
