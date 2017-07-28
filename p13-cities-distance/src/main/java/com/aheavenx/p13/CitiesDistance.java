@@ -5,9 +5,9 @@ import com.aheavenx.p13.api.GeocodingProvider;
 import com.aheavenx.p13.api.IpLookupProvider;
 import com.aheavenx.p13.impl.IpApiProvider;
 import com.aheavenx.p13.impl.OSMGeocodingProvider;
-
 import java.util.Scanner;
 import java.util.logging.Logger;
+import static java.lang.Math.*;
 
 /**
  * @author Skovorodnikov
@@ -21,12 +21,12 @@ public class CitiesDistance {
 
     private static double distFrom(double lat1, double lng1, double lat2, double lng2) {
         double earthRadius = 6371000; //meters
-        double dLat = Math.toRadians(lat2 - lat1);
-        double dLng = Math.toRadians(lng2 - lng1);
-        double a = Math.sin(dLat/2) * Math.sin(dLat/2) +
-                Math.cos(Math.toRadians(lat1)) * Math.cos(Math.toRadians(lat2)) *
-                        Math.sin(dLng/2) * Math.sin(dLng/2);
-        double c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+        double dLat = toRadians(lat2 - lat1);
+        double dLng = toRadians(lng2 - lng1);
+        double a = sin(dLat/2) * sin(dLat/2) +
+                cos(toRadians(lat1)) * cos(toRadians(lat2)) *
+                        sin(dLng/2) * sin(dLng/2);
+        double c = 2 * atan2(sqrt(a), sqrt(1-a));
         return earthRadius * c;
     }
 
