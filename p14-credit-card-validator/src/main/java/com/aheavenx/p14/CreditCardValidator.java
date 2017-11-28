@@ -13,18 +13,18 @@ public class CreditCardValidator {
         int lastDigit = number.charAt(number.length() - 1) - 0x30;
         int sum = 0;
         String validating = new StringBuilder(number.substring(0, number.length() - 1)).reverse().toString();
-        for (int i = 0; i < number.length() - 1; i++) {
+        for (int i = 0; i < validating.length(); i++) {
             int num = validating.charAt(i) - 0x30;
             sum += i % 2 != 0 ?
                     num :
-                    (num * 2) > 9 ? num * 2 - 9 : num * 2;
+                    ((num * 2) > 9 ? num * 2 - 9 : num * 2);
         }
         return sum % 10 == lastDigit;
     }
 
     public static void main(String[] args) {
+        System.out.println(new CreditCardValidator().isValid("676280389877527353"));
         System.out.println(new CreditCardValidator().isValid("4556737586899855"));
-        System.out.println(new CreditCardValidator().isValid("4929599761113217"));
         System.out.println(new CreditCardValidator().isValid("6761593990156606"));
         System.out.println(new CreditCardValidator().isValid("5595672452489525"));
         System.out.println(new CreditCardValidator().isValid("34"));
